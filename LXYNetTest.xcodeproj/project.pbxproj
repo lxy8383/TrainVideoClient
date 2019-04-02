@@ -15,6 +15,7 @@
 		503A0BEB224A3016003510EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A0BEA224A3016003510EA /* main.m */; };
 		503A0BF5224A3016003510EA /* LXYNetTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A0BF4224A3016003510EA /* LXYNetTestTests.m */; };
 		503A0C00224A3016003510EA /* LXYNetTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A0BFF224A3016003510EA /* LXYNetTestUITests.m */; };
+		5696785D56586F1D7E4D9EBA /* libPods-LXYNetTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 283B0EEBF067ABC8EE1A708B /* libPods-LXYNetTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BE63E4BBA646D4296D19CA6 /* Pods-LXYNetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXYNetTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXYNetTest/Pods-LXYNetTest.release.xcconfig"; sourceTree = "<group>"; };
+		283B0EEBF067ABC8EE1A708B /* libPods-LXYNetTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXYNetTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		503A0BD8224A3012003510EA /* LXYNetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXYNetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503A0BDB224A3012003510EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		503A0BDC224A3012003510EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		503A0BFB224A3016003510EA /* LXYNetTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXYNetTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503A0BFF224A3016003510EA /* LXYNetTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXYNetTestUITests.m; sourceTree = "<group>"; };
 		503A0C01224A3016003510EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9326C0D7EAF8944D5045B4 /* Pods-LXYNetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXYNetTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXYNetTest/Pods-LXYNetTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5696785D56586F1D7E4D9EBA /* libPods-LXYNetTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3011B19426ED94E3045B6F69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F9326C0D7EAF8944D5045B4 /* Pods-LXYNetTest.debug.xcconfig */,
+				0BE63E4BBA646D4296D19CA6 /* Pods-LXYNetTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		503A0BCF224A3012003510EA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				503A0BF3224A3016003510EA /* LXYNetTestTests */,
 				503A0BFE224A3016003510EA /* LXYNetTestUITests */,
 				503A0BD9224A3012003510EA /* Products */,
+				3011B19426ED94E3045B6F69 /* Pods */,
+				525768DA9BF22E694FB17E71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = LXYNetTestUITests;
 			sourceTree = "<group>";
 		};
+		525768DA9BF22E694FB17E71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				283B0EEBF067ABC8EE1A708B /* libPods-LXYNetTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 503A0C04224A3016003510EA /* Build configuration list for PBXNativeTarget "LXYNetTest" */;
 			buildPhases = (
+				F134AA155F59420D0E08D0B1 /* [CP] Check Pods Manifest.lock */,
 				503A0BD4224A3012003510EA /* Sources */,
 				503A0BD5224A3012003510EA /* Frameworks */,
 				503A0BD6224A3012003510EA /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F134AA155F59420D0E08D0B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LXYNetTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		503A0BD4224A3012003510EA /* Sources */ = {
@@ -433,15 +479,13 @@
 		};
 		503A0C05224A3016003510EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9326C0D7EAF8944D5045B4 /* Pods-LXYNetTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F939S9UT9X;
 				INFOPLIST_FILE = LXYNetTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindLink.LXYNetTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,15 +494,13 @@
 		};
 		503A0C06224A3016003510EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE63E4BBA646D4296D19CA6 /* Pods-LXYNetTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F939S9UT9X;
 				INFOPLIST_FILE = LXYNetTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindLink.LXYNetTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,11 +514,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F939S9UT9X;
 				INFOPLIST_FILE = LXYNetTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindLink.LXYNetTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,11 +529,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F939S9UT9X;
 				INFOPLIST_FILE = LXYNetTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindLink.LXYNetTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,11 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F939S9UT9X;
 				INFOPLIST_FILE = LXYNetTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindLink.LXYNetTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,11 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F939S9UT9X;
 				INFOPLIST_FILE = LXYNetTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KindLink.LXYNetTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
